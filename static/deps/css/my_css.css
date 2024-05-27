@@ -1,0 +1,260 @@
+body {
+  background-image: url("../images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.custom-shadow {
+  box-shadow: 5px 5px 25px 19px #000000;
+  margin-top: 90px;
+}
+
+.custom-shadow2 {
+  box-shadow: 5px 5px 25px 19px #000000;
+  margin-top: 20px;
+  margin-right: 350px;
+}
+
+.product_id {
+  color: gray;
+  font-size: 15px;
+}
+
+.badge.bg-warning.text-dark {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 1;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 15px 9px #000000;
+}
+
+.badge-banner {
+  top: 80%;
+  border-radius: 15px;
+  font-size: 0.7rem;
+}
+
+.hero-title {
+  padding-top: 80px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White color */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ffffff; /* White color */
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  font-size: 24px;
+  line-height: 133%;
+}
+
+.register-btn,
+.login-btn {
+  font-family: ABeeZee, sans-serif;
+  font-size: 80%;
+  border-radius: 8px;
+  background-color: #1d47a7;
+  color: #fff;
+  white-space: nowrap;
+  padding: 14px 36px; 
+  border: none;
+  cursor: pointer;
+  width: 200px; 
+  margin-top: 20px;
+  margin-right: 200px;
+}
+
+.register-btn:hover,
+.login-btn:hover {
+  background-color: #0f53f0;
+}
+
+.about {
+  position: relative;
+  padding: 40px 0;
+}
+
+.addreess {
+  position: absolute;
+  margin-top: 120px;
+  right: 160px;
+}
+
+.addreess img {
+  width: 100%;
+  height: auto;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-right: 250px;
+}
+
+.contact-info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: -150px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  color: #1d47a7;
+}
+
+.text {
+  flex-grow: 1;
+  color: #1d47a7;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details {
+  font-size: 14px;
+  color: #1d47a7;
+}
+
+.mt{
+  margin-top: 60px;
+  color: #ffffff;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ccc; /* Добавляем рамку */
+  background-color: #f9f9f9; /* Добавляем фон */
+  margin-left: -200px;
+  margin-bottom: 40px; /* Увеличиваем отступ снизу до 40px */
+  padding: 30px; /* Добавляем отступ внутри карточки */
+}
+
+.services-text {
+  text-align: center; /* Выравнивание текста по центру */
+  color: #ffffff; /* Установка белого цвета текста */
+  margin-left: -180px;
+  justify-content: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+
+
+.service-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.service-details h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-details p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #1d47a7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0f53f0;
+}
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  color: #ffffff;
+}
+
+.social-icon img {
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.text_services {
+  text-align: center; /* Выравнивание текста по центру */
+  color: #ffffff; /* Установка белого цвета текста */
+  margin-left: -180px;
+  justify-content: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.text_services c {
+  font-weight: bold;
+  color: #fff;
+}

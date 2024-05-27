@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock css %}
+
+{% block content %}
+<div class="col-lg-10">
+    <h1 class="hero-title">
+        Агентство по анализу и выбору ценовой модели размещения интернет-рекламы ️
+    </h1>
+    <p class="hero-subtitle">
+        digital-агентство полного цикла и мы готовы продвигать вашу компанию “под ключ” выполняя ваши KPI! <br>
+    </p>
+</div>
+{% if not user.is_authenticated %}
+<div class="hero-cta">
+    <button class="register-btn" onclick="window.location.href='{% url "users:registration" %}'">Регистрация</button>
+    <button class="login-btn" onclick="window.location.href='{% url "users:login" %}'">Вход</button>    
+</div>
+{% endif %}
+{% endblock content %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; DimeSpark 2024</p>
+    </div>
+</footer>
+{% endblock footer %}
+
+

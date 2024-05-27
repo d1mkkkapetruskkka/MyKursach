@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock css %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock modal_cart %}
+
+{% block content %}
+<div class="about">
+    <div class="addreess">
+      <img src="{% static "deps/images/address.png" %}">
+    </div>
+  
+    <div class="welcome-message">
+      Добро пожаловать в наш офис.<br>
+      Совместно обсудим Ваш проект и предложим решения!
+    </div>
+  
+    <div class="contact-info">
+      <div class="info-item">
+        <div class="icon place-icon">
+          <img src="{% static "deps/images/place.png" %}" alt="Адрес">
+        </div>
+        <div class="text">
+          <div class="label">Адрес</div>
+          <div class="details">г. Минск, ул. Пономоренко 34</div>
+        </div>
+      </div>
+  
+      <div class="info-item">
+        <div class="icon phone-icon">
+          <img src="{% static "deps/images/phones.png" %}" alt="Телефон">
+        </div>
+        <div class="text">
+          <div class="label">Телефон</div>
+          <div class="details">+375 (29) 254 26 67</div>
+        </div>
+      </div>
+  
+      <div class="info-item">
+        <div class="icon email-icon">
+          <img src="{% static "deps/images/email.png" %}" alt="E-mail">
+        </div>
+        <div class="text">
+          <div class="label">E-mail</div>
+          <div class="details">dimespark@gmail.com</div>
+        </div>
+      </div>
+  
+      <div class="info-item">
+        <div class="icon time-icon">
+          <img src="{% static "deps/images/time.png" %}" alt="Режим работы">
+        </div>
+        <div class="text">
+          <div class="label">Режим работы</div>
+          <div class="details">Пн. – Пт.: с 9:00 до 18:00</div>
+        </div>
+      </div>
+    </div>  
+</div>
+{% endblock content %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; DimeSpark 2024</p>
+    </div>
+</footer>
+{% endblock footer %}
+
+

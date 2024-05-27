@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock css %}
+
+{% block content %}
+<div class="services">
+    <div class="services-text">
+        <h1>Услуги</h1>
+        <p>Комплексно подходим к каждому проекту, оцениваем рынок и Ваш продукт, предлагаем тот набор инструментов интернет-маркетинга, который действительно принесет результат и решит задачи Вашего бизнеса.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-image">
+            <img src="{% static "deps/images/marketing.jpg" %}" alt="Service 1">
+        </div>
+            <div class="service-details">
+                <h2>Интернет-маркетинг</h2>
+                <p>Комплексное продвижение бизнеса в Интернете</p>
+                <button >Узнать больше</button>
+            </div>
+    </div>
+    <div class="service-card">
+        <div class="service-image">
+            <img src="{% static "deps/images/contextual advertising.jpg" %}" alt="Service 2">
+        </div>
+            <div class="service-details">
+                <h2>Контекстная реклама</h2>
+                <p>Контекстная реклама в браузерах Google и Яндекс</p>
+                <button>Узнать больше</button>
+            </div>
+    </div>
+    <div class="service-card">
+        <div class="service-image">
+            <img src="{% static "deps/images/SMM.jpg" %}" alt="Service 3">
+        </div>
+            <div class="service-details">
+                <h2>SMM продвижение</h2>
+                <p>Продвижение и реклама в ВКонтакте, Инстаграм, Facebook</p>
+                <button onclick="window.location.href='{% url "main:SMM" %}'">Узнать больше</button>
+            </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; DimeSpark 2024</p>
+    </div>
+</footer>
+{% endblock footer %}
